@@ -19,7 +19,7 @@ Open any `.html` file directly in your browser — no build step, no install.
 | [po-water.html](po-water.html) | Water intake tracker |
 | [finance.html](finance.html) | Finances |
 | [gym.html](gym.html) | Progressive overload gym tracker |
-| [cutting.html](cutting.html) | Calorie & macro tracker for cutting: deficit targets, weigh-in trend, adaptive maintenance estimate |
+| [cutting.html](cutting.html) | Calorie & macro tracker for cutting: deficit targets, weigh-in trend, adaptive maintenance estimate. Installable as a desktop/phone app (see below) |
 | [topbar.js](topbar.js) | Shared top bar — auto-injected into pages that `<script src="topbar.js">` |
 
 Each app stores its own state in browser `localStorage`. No accounts, no server.
@@ -27,3 +27,13 @@ Each app stores its own state in browser `localStorage`. No accounts, no server.
 ## Building from scratch
 
 [BUILD_DASHBOARD.md](BUILD_DASHBOARD.md) is the prompt I gave Claude to generate `index.html` — paste it into Claude if you want to rebuild that page yourself.
+
+## Install the cutting tracker as an app
+
+Open `cutting.html` on your live site (it has to be https, not a local file):
+
+- **Chrome / Edge (Windows, Mac, Linux):** click **⬇ Install app** at the top of the page, or the install icon at the right end of the address bar. Cut opens in its own window and gets a desktop/Start menu/Dock icon.
+- **Safari (Mac):** File → Add to Dock.
+- **iPhone:** Share → Add to Home Screen. **Android:** ⋮ → Install app.
+
+It works offline; your data stays in the browser and syncs like the other pages.
